@@ -1,7 +1,7 @@
-<?php require 'DashboardHeader.php'?>
+<?php require 'LoginHeader.php'?>
 <div class="card container-fluid">
     <div style="background-color: white;" class="row p-2">
-    	<div id="chartContainer" style="width: 100%; height: 300px"></div>
+    	
     </div>
 </div>
 <div class="container-fluid mt-3">
@@ -40,4 +40,4 @@
 		</div>
 	</div>
 </div>
-<?php require 'DashboardFooter.php'?>
+<?php require 'LoginFooter.php'?>
