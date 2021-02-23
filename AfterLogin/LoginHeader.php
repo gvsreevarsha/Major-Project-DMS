@@ -11,6 +11,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style type="text/css">
+body{  
+  font-family: Calibri, Helvetica, sans-serif; 
+	 
+ 
+}  
+.rstbtn{margin-left:200px;}
+
+.changepwdbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer; 
+margin-left:400px;  
+    
+}  
+.changepwdbtn:hover {  
+   
+}  
+ 
         #mySidenav {
             position: absolute;
             left: -270px;
