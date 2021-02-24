@@ -1,7 +1,7 @@
 <div class="hoverable">
     <div class="card">
         <ul class="list-group list-group-flush">
-            <li class="list-group-item menu" style="color: white;">My Work Table</li>
+            <li class="list-group-item menu" style="color: white;"><a href="LoginContent.php" style="text-decoration: none; color: white;">My Work Table</a></li>
         </ul>
     </div>
     <div class="card">
