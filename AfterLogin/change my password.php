@@ -2,30 +2,22 @@
 <div class="card container-fluid">
     <div style="background-color: white;" class="row p-2">
     	<form>  
- <div class="container">   
-<center><h1>PASSWORDS ARE STRONGLY ENCRYPTED.THEY CANNOT BE READ EVEN IN DATABASE BY ANYBODY.<h1></center>
- <br>
-<br>
- 
-<label> <font size="6">  Current Password   </font></label> 
-&nbsp;      
-<input type="text" name="Current Password"  placeholder="Enter Present Password"size="20"/> <br> <br>  
-<label><font size="6"> New Password</font> </label>  
-&emsp;
-<input type="text" name="New Password"  placeholder="Enter New Password,6-28 Characters length"size="45"/> <br> <br>  
-<label><font size="6"> Confirm New Password </font></label> 
-&nbsp;       
-<input type="text" name="Confirm New Password" &nbsp placeholder="Re-enter the new password" size="25"/> <br> <br> 
-
-<p style="color:red"><font size="4">ALL FIELDS ARE MANDATORY TO CHANGE THE PASSWORD.</font></p>
-<br>
-<br>
-<input type="button" class="rstbtn"value="Reset"/>   
-<input type="button"class="changepwdbtn" value="Change Password"/>  
-<p style="color:purple","font-family:verdana"><font size="5"><b>Note:It is recommended to change</b> </font><input type="button"value="Default password Reset phrase"/></p>
- 
-</form>
-
+ 			<div class="container row">
+				<label class="col-sm-4 p-2">Current Password   </label>       
+				<input class="col-sm-8 p-2" type="text" name="Current Password"  placeholder="Enter Present Password"/>
+				<label class="col-sm-4 p-2"> New Password </label>  
+				<input class="col-sm-8 p-2" type="text" name="New Password"  placeholder="Enter New Password,6-28 Characters length"/>
+				<label class="col-sm-4 p-2"> Confirm New Password </label>        
+				<input class="col-sm-8 p-2" type="text" name="Confirm New Password" &nbsp placeholder="Re-enter the new password"/> 
+				<h6 style="color:red" class="col-sm-12 pl-4">ALL FIELDS ARE MANDATORY TO CHANGE THE PASSWORD.</h6>
+				<div class="row col-sm-12 p-2" align="center">
+					<div class="col-sm-6"><input type="button" class="btn btn-light border border-info text-info" value="Reset"/></div>   
+					<div class="col-sm-6"><input type="button" class="btn btn-success" value="Change Password"/></div>
+				</div>
+				<div class="col-sm-12 p-2" align="center">
+					<p style="color:purple; font-family:verdana;"><font size="5"><b>Note:It is recommended to change</b> </font><input type="button" class="btn btn-light border border-info text-info" value="Default password Reset phrase"/></p>
+				</div>
+		</form>
     </div>
 </div>
 <div class="container-fluid mt-3">

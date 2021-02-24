@@ -11,7 +11,7 @@
       				<button type="submit" class="search"><i class="fa fa-search" style="color: white;"></i></button>
       			</div>
       			<div class="col-xl-7 col-sm-6">
-      				<button type="button" class="btn btn-primary pt-1 search" data-toggle="modal" data-target="#exampleModal">Sign In</button>
+      				<button type="button" class="btn btn-danger pt-1 search" data-toggle="modal" data-target="#exampleModal">Sign In</button>
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="color: black;">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -30,7 +30,7 @@
                                 <label class="col-sm-12">Password:<input type="password" name="password"></label>
                                 <div class="col-sm-12"><label><input type="checkbox" checked="checked" name="remember"> Remember me  </label></div>
                                 <div class="col-sm-12">
-                                  <button type="Submit" class="btn btn-primary col-md-3 col-sm-12 p-1" align="center" style="background-color: #FF4500; border: #FF4500;">Login</button>
+                                  <button type="Submit" class="btn btn-danger col-md-3 col-sm-12 p-1" align="center" style="background-color: #FF4500; border: #FF4500;">Login</button>
                                   <a href="forgotpassword.php" class="col-md-9 col-sm-12" style="color: #ff4500;">Forgot Password?</a>
                                 </div>
                               </form>

@@ -1,1 +1,4 @@
-<?php echo date('Y-m-d',strtotime("-30 days"));?>
+<?php
+header("Location:AfterLogin/LoginContent.php");
+exit();
+?>
