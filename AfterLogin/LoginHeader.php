@@ -1,3 +1,9 @@
+<?php
+session_start();
+?>
+<?php
+require '../connect.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
