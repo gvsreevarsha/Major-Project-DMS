@@ -26,8 +26,8 @@
                             <div class="col-md-4 col-sm-12"><img src="Images/user.png" alt="User Image" width="150px"/></div>
                             <div class="col-md-8 col-sm-12" >
                               <form method="post" action="login.php">
-                                <label class="col-sm-12">UserId:<input type="text" name="userid"></label>
-                                <label class="col-sm-12">Password:<input type="password" name="password"></label>
+                                <label class="col-sm-12">UserId:<input type="text" name="userid" id="userid"></label>
+                                <label class="col-sm-12">Password:<input type="password" name="password" id="password"></label>
                                 <div class="col-sm-12"><label><input type="checkbox" checked="checked" name="remember"> Remember me  </label></div>
                                 <div class="col-sm-12">
                                   <button type="Submit" class="btn btn-danger col-md-3 col-sm-12 p-1" align="center" style="background-color: #FF4500; border: #FF4500;">Login</button>
