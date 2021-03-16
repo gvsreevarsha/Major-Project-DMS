@@ -16,9 +16,9 @@
                 <div id="collapse1" class="panel-collapse collapse">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item menu"><a href="add new deficiency details.php" style="color:white; text-decoration: none;"><i class="fa fa-plus"></i>&emsp;New Deficiency</a></li>
-                        <li class="list-group-item menu"><a href="Dailyreports.php" style="color:white; text-decoration: none;"><i class="fa fa-hourglass"></i>&emsp;Update status</a></li>
-                        <li class="list-group-item menu"><a href="Forgotpassword.php" style="color:white; text-decoration: none;"><i class="fa fa-search"></i>&emsp;Search Records</a></li>
-                        <li class="list-group-item menu"><a href="Signup.php" style="color:white; text-decoration: none;"><i class="fa fa-edit"></i>&emsp;Edit Details</a></li>
+                        <li class="list-group-item menu"><a href="#" style="color:white; text-decoration: none;"><i class="fa fa-hourglass"></i>&emsp;Update status</a></li>
+                        <li class="list-group-item menu"><a href="#" style="color:white; text-decoration: none;"><i class="fa fa-search"></i>&emsp;Search Records</a></li>
+                        <li class="list-group-item menu"><a href="#" style="color:white; text-decoration: none;"><i class="fa fa-edit"></i>&emsp;Edit Details</a></li>
                     </ul>
                 </div>
             </div>
@@ -36,8 +36,8 @@
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item menu"><a href="DashboardContent.php" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Manage Permittee</a></li>
-                        <li class="list-group-item menu"><a href="Dailyreports.php" style="color:white; text-decoration: none;"><i class="fa fa-paperclip"></i>&emsp;Add Equipment</a></li>
+                        <li class="list-group-item menu"><a href="#" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Manage Permittee</a></li>
+                        <li class="list-group-item menu"><a href="equipment by location.php" style="color:white; text-decoration: none;"><i class="fa fa-paperclip"></i>&emsp;Add Equipment</a></li>
                         <li class="list-group-item menu"><a href="Statistics.php" style="color:white; text-decoration: none;"><i class="fa fa-list"></i>&emsp;Statistics</a></li>
                     </ul>
                 </div>

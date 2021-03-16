@@ -8,6 +8,8 @@ $query=mysqli_query($con,"SELECT * FROM `users` WHERE `icno`=".$user." AND `pwd`
 $rowcount=mysqli_num_rows($query);
 if($rowcount!=1)
 {
+	$query=mysqli_query($con,"INSERT INTO `userlog`(`uid`, `sind`, `sint`, `outd`, `outt`) VALUES ($user,CURRENT_DATE(),CURRENT_TIME(),CURRENT_DATE(),CURRENT_TIME())");
+
 	echo '<script type="text/javascript"> 
     alert("Wrong Credentials"); 
     window.location.href = "DashboardContent.php";
