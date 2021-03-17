@@ -1,11 +1,4 @@
 <?php require 'LoginHeader.php'?>
-<div class="card container-fluid">
-    <div style="background-color: white;" class="row p-2">
-    	
-</div>
-<div class="container-fluid mt-3">
-	<div class="row">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 <head>
 <style>
 .button {
@@ -29,12 +22,16 @@ table.menu {
      margin-right:0px;
      margin-left:700px;
 }
-
-
-
-
 </style>
 </head>
+<div class="card container-fluid">
+    <div style="background-color: white;" class="row p-2">
+    	
+</div>
+<div class="container-fluid mt-3">
+	<div class="row">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
 
 <body>
         <label>LOCATION/SYSTEM:</label>&emsp;
