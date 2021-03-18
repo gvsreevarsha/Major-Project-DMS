@@ -13,13 +13,7 @@ body
 {
 text-align:center;
 }
-h5
-{
-font-family: "Lucida Console", "Courier New", monospace;
-color:green;
-text-align: center;
 
-}
 .srchbtn {  
   background-color: #4CAF50;  
   color: black;  
@@ -32,9 +26,9 @@ text-align: center;
 } 
 
 </style>
-</head>>
+</head>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-<h5>DO NOT SELECT AN OPTION,IF THAT CRITERIA IS NOT APPROPRIATE(LET IT BE DEFAULT)</h5>
+<h5 style="font-family: 'Lucida Console','Courier New', monospace;color:green; text-align: center;">DO NOT SELECT AN OPTION,IF THAT CRITERIA IS NOT APPROPRIATE(LET IT BE DEFAULT)</h5>
 <body>
 <form action="/action_page.php"> 
 <fieldest>

@@ -16,13 +16,14 @@ $result=mysqli_fetch_row($query);
       			</div>
       			<div class="col-xl-7 col-sm-6">
               <div class="dropdown">
-                <button class="btn btn-danger dropdown-toggle search" type="button" id="menu1" data-toggle="dropdown"><?php echo $result[0];?>
+                <button class="btn btn-danger dropdown-toggle search" type="button" id="menu1" data-toggle="dropdown">
+                  <?php echo $result[0];?>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                   <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="../signout.php" class="p-2 menuitem"><i class="fa fa-sign-out"></i>&emsp;Sign Out</a></li>
                   <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="change my password.php" class="p-2 menuitem"><i class="fa fa-key"></i>&emsp;Change Password</a></li>
-                  <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="#" class="p-2 menuitem"><i class="fa fa-history"></i>&emsp;Log Details</a></li>
-                  <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="#" class="p-2 menuitem"><i class="fa fa-user"></i>&emsp;My Profile</a></li>
+                  <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="Log Details.php" class="p-2 menuitem"><i class="fa fa-history"></i>&emsp;Log Details</a></li>
+                  <li role="presentation" class="menuiteml p-2"><a role="menuitem" tabindex="-1" href="profile.php" class="p-2 menuitem"><i class="fa fa-user"></i>&emsp;My Profile</a></li>
                 </ul>
               </div>
       			</div>
