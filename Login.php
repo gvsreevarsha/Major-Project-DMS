@@ -22,10 +22,16 @@ if($rowcount!=1)
     </script>;';
 }
 else
-{
-	$query=mysqli_query($con,"INSERT INTO `userlog`(`uid`, `sind`, `sint`, `outd`, `outt`) VALUES ($user,CURRENT_DATE(),CURRENT_TIME(),CURRENT_DATE(),CURRENT_TIME())");
+{	
 	session_start();
 	$_SESSION["id"]=$user;
+    date_default_timezone_set("Asia/Kolkata");
+    $indate=date("Y-m-d");
+    $intime=date("H:i:s");
+    $s="INSERT INTO `userlog`(`uid`, `sind`, `sint`, `outd`, `outt`) VALUES ('$user','$indate','$intime','0000-00-00','00:00:00')";
+    $_SESSION["indate"]=$indate;
+    $_SESSION["intime"]=$intime;
+    $result = mysqli_query($con, $s);
 	header("Location:AfterLogin/LoginContent.php");
 }
 exit();
