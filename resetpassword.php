@@ -31,7 +31,7 @@ if($query2)
 else
     echo '<script type="text/javascript"> 
     alert("Password Couldnot Be Updated"); 
-    window.location.href = "DashboardContent.php";
+    window.location.href = "Forgotpassword.php";
     </script>;';
 echo $query2;
 ?>
