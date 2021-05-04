@@ -11,7 +11,7 @@
 				<input class="col-sm-8 mt-1 mb-1 p-2" type="password" name="renewpwd" placeholder="Re-enter the new password"/> 
 				<h6 style="color:red" class="col-sm-12 pl-4">ALL FIELDS ARE MANDATORY TO CHANGE THE PASSWORD.</h6>
 				<div class="row col-sm-12" align="center">
-					<div class="col-sm-6"><input type="button" class="btn btn-light border border-info text-info" value="Reset"/></div>   
+					<div class="col-sm-6"></div>   
 					<div class="col-sm-6"><input type="submit" class="btn btn-success" value="Change Password"/></div>
 				</div>
 				<div class="col-sm-12" align="center">

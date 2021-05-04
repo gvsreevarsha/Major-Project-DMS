@@ -24,6 +24,15 @@ if($rowcount!=1)
 else
 {	
 	session_start();
+    if(!empty($_POST["remember"])) {
+        setcookie ("id",$_POST["userid"],time()+ 3600);
+        setcookie ("pwd",$_POST["password"],time()+ 3600);
+        echo "Cookies Set Successfuly";
+    } else {
+        setcookie("id","");
+        setcookie("pwd","");
+        echo "Cookies Not Set";
+    }
 	$_SESSION["id"]=$user;
     date_default_timezone_set("Asia/Kolkata");
     $indate=date("Y-m-d");
