@@ -2,16 +2,17 @@
 <div class="card container-fluid">
   <div style="background-color: white;" class="row p-2">
     <div class="col-sm-12">&nbsp;</div>
-    <div class="col-sm-12 p-2">TO DELETE OR TRANSFER, CLICK ON PERMITEE</div>
+    <div class="col-sm-12 p-2" align="right"><a><button><i class="fa fa-plus"></i></button></a></div>
     <table class="col-sm-12 table table-responsive-sm ">
       <thead class="thead-dark">
         <tr>
           <th>Sno</th>
           <th>Permittee Name</th>
           <th>Agency</th>
-          <th>Existing SV</th>
+          <th>Existing SWP</th>
           <th>Added On</th>
           <th>Added By</th>
+          <th>Edit/ Delete</th>
         </tr>
       </thead>
       <tbody>
@@ -34,6 +35,8 @@
                         <td>'.$count1.'</td>
                         <td>'.$pfrom.'</td>
                         <td>'.$addedby.'</td>
+                        <td><a><button><i class="fa fa-trash"></i></button></a>&emsp;<a><button><i class="fa fa-edit"></i></button></a></td>
+
                     </tr>';
                 $sno=$sno+1;
             }
