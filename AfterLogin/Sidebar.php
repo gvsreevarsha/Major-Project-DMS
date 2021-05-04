@@ -36,7 +36,7 @@
                 </div>
                 <div id="collapse2" class="panel-collapse collapse">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item menu"><a href="Manage permitte.php" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Manage Permittee</a></li>
+                        <li class="list-group-item menu"><a href="Manage permittee.php" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Manage Permittee</a></li>
                         <li class="list-group-item menu"><a href="equipment by location.php" style="color:white; text-decoration: none;"><i class="fa fa-paperclip"></i>&emsp;Add Equipment</a></li>
                         <li class="list-group-item menu"><a href="Statistics.php" style="color:white; text-decoration: none;"><i class="fa fa-list"></i>&emsp;Statistics</a></li>
                     </ul>
