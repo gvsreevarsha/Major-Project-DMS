@@ -11,10 +11,9 @@ if(!(mysqli_num_rows(mysqli_query($con,"SELECT * FROM `users` WHERE `icno`=".$us
     window.location.href = "DashboardContent.php";
     </script>;';
 }
-$query=mysqli_query($con,"SELECT `pwd` FROM `users` WHERE `icno`=".$user);
+$query=mysqli_query($con,"SELECT * FROM `users` WHERE `icno`=".$user);
 $row=mysqli_fetch_assoc($query);
-echo $pwd;
-echo $row["pwd"];
+$name=$row["dname"];
 if(!password_verify($pwd,$row["pwd"]))
 {
 
@@ -36,6 +35,7 @@ else
         echo "Cookies Not Set";
     }
 	$_SESSION["id"]=$user;
+    $_SESSION["name"]=$name;
     date_default_timezone_set("Asia/Kolkata");
     $indate=date("Y-m-d");
     $intime=date("H:i:s");

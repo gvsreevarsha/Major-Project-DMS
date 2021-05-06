@@ -3,14 +3,12 @@ session_start();
 require "../connect.php";
 $currpwd=$_POST["pwd"];
 $phrase=$_POST["phrase"];
-echo $currpwd;
-echo $phrase;
-$query=mysqli_query($con,"SELECT * FROM `users` WHERE `icno`=".$_SESSION["id"]." AND `pwd`='".$currpwd."'");
-$row = mysqli_num_rows($query);
-if($row==0)
+$query=mysqli_query($con,"SELECT * FROM `users` WHERE `icno`=".$_SESSION["id"]);
+$row = mysqli_fetch_assoc($query);
+if(!(password_verify($currpwd,$row["pwd"])))
 {
 	echo '<script type="text/javascript"> 
-    alert("Current Password Incorrect"); 
+    alert("Password Incorrect"); 
     window.location.href = "change my password.php";
     </script>;';
 }
