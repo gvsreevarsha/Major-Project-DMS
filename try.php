@@ -1,7 +1,10 @@
 <?php
-session_start();
-require 'connect.php';
-$query=mysqli_query($con,"SELECT `dname` FROM `users` WHERE `icno`=".$_SESSION["id"]);
-$result=mysqli_fetch_row($query);
-echo $result[0];
+$hash="password";
+$a1=password_hash($hash, PASSWORD_DEFAULT);
+echo $a1;
+if (password_verify($hash, $a1)) {
+    echo 'Password is valid!';
+} else {
+    echo 'Invalid password.';
+}
 ?>
