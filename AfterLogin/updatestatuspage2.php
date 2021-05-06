@@ -3,8 +3,17 @@
 $defno=$_POST["defno"];
 $query="SELECT * FROM `records`,`agency` WHERE `records`.`agency`=`agency`.`dname` and `records`.`rid`=".$defno;
 $result = $con->query($query);
+$rowcount = $result->num_rows;
+if($rowcount==0)
+	$agency="Not yet Allotted";
+else
+{
+	$row = $result->fetch_assoc();
+	$agency=$row["aname"];
+}
+$query="SELECT * FROM `records` WHERE `records`.`rid`=".$defno;
+$result = $con->query($query);
 $row = $result->fetch_assoc();
-$agency=$row["aname"];
 $loc=$row["location"];
 $equip=$row["equipment"];
 $status=$row["status"];
@@ -14,11 +23,17 @@ $permittee=$row["permittee"];
 ?>
 <div class="card container-fluid">
   <div style="background-color: white;" class="container">
-      <form method="post" action="updatestatuspage2.php" class="row p-4">
+      <form method="POST" action="updatestatuspage3.php?id=<?php echo $defno;?>" class="row p-4">
       	<div class="col-sm-4 p-1">Deficiency Number:</div>
       	<div class="col-sm-8 p-1"><?php echo $defno;?></div>
       	<div class="col-sm-4 p-1">Maintenance Agency:</div>
-      	<div class="col-sm-8 p-1"><?php echo $agency;?>&emsp;<button><i class="fa fa-external-link">&nbsp;&nbsp;</i>Divert Agency</button></div>
+      	<div class="col-sm-8 p-1"><?php echo $agency;?>&emsp;<a href="updatestatuspage4.php?def=<?php echo $defno;?>"><div class="btn btn-primary"><i class="fa fa-external-link">&nbsp;&nbsp;</i>
+      	<?php
+      	if($agency=="Not yet Allotted")
+      		echo "Allot Agency";
+      	else
+      		echo "Divert Agency";
+      	?></div></a></div>
       	<div class="col-sm-4 p-1">Location & Equipment:</div>
       	<div class="col-sm-8 p-1"><?php echo $loc;?>&emsp;<?php echo $equip;?></div>
       	<div class="col-sm-4 p-1">Current Status:</div>
@@ -209,8 +224,8 @@ if ($curstat == "DR" || $curstat == "DR REISSUED" ){
       	</div>
       	<div class="col-sm-4 p-1" >Class of SWP:</div>
       	<div class="col-sm-8 p-1">
-      		<select id="Status" class="col-sm-8" name="Select Deficiency Current Status" <?php if( $status != "SWP PART I PREPARED" && $status != "SAFETY CLEARED" && $status != "SWP ISSUED" && $status != "SWP REISSUED" ) { echo "disabled=\"disabled\""; }  ?>>
-              <option value="Select deficiency Current Status">Select deficiency Current Status</option>
+      		<select id="Status" class="col-sm-8" name="class" <?php if( $status != "SWP PART I PREPARED" && $status != "SAFETY CLEARED" && $status != "SWP ISSUED" && $status != "SWP REISSUED" ) { echo "disabled=\"disabled\""; }  ?>>
+              <option value="class">Select Class of SWP</option>
               <?php  
              	$sql = "SELECT class FROM swpclass WHERE status = 'active' ORDER BY id ASC";
 	         	$result = mysqli_query($con, $sql);
@@ -225,8 +240,8 @@ if ($curstat == "DR" || $curstat == "DR REISSUED" ){
       	</div>
       	<div class="col-sm-4 p-1">Permittee Name:</div>
       	<div class="col-sm-8 p-1">
-      		<select  class="col-sm-8" id="Status" name="Select Deficiency Current Status" <?php if( $status != "SWP PART I PREPARED" && $status != "SAFETY CLEARED" && $status != "SWP ISSUED" && $status != "SWP REISSUED" ) { echo "disabled=\"disabled\""; } ?>>
-              	<option value="Select deficiency Current Status">Select Permittee</option>
+      		<select  class="col-sm-8" id="Status" name="permittee" <?php if( $status != "SWP PART I PREPARED" && $status != "SAFETY CLEARED" && $status != "SWP ISSUED" && $status != "SWP REISSUED" ) { echo "disabled=\"disabled\""; } ?>>
+              	<option value="permittee">Select Permittee</option>
               	<?php
 			  		$sql1 = "SELECT name FROM permittee WHERE status = 'active' AND agency = '$agency' ORDER BY name ASC";
 	      			$result1 = mysqli_query($con, $sql1);
@@ -238,7 +253,7 @@ if ($curstat == "DR" || $curstat == "DR REISSUED" ){
 				?> 
             </select>
       	</div>
-      	<a class="col-sm-6"><button><i class="fa fa-reply">&nbsp;&nbsp;</i>Revert Back</button></a>
+      	<a href="updatestatuspage1.php" class="col-sm-6"><div class="btn"><i class="fa fa-reply">&nbsp;&nbsp;</i>Revert Back</div></a>
       	<button type="Submit"><i class="fa fa-hourglass-half"></i>Update Status</button>
       </form>    
   </div>
