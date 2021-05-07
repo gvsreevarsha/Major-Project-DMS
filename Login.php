@@ -14,6 +14,7 @@ if(!(mysqli_num_rows(mysqli_query($con,"SELECT * FROM `users` WHERE `ustatus`='a
 $query=mysqli_query($con,"SELECT * FROM `users` WHERE `ustatus`='active' AND `icno`=".$user);
 $row=mysqli_fetch_assoc($query);
 $name=$row["dname"];
+$type=$row["memclass"];
 if(!password_verify($pwd,$row["pwd"]))
 {
 
@@ -43,7 +44,14 @@ else
     $_SESSION["indate"]=$indate;
     $_SESSION["intime"]=$intime;
     $result = mysqli_query($con, $s);
-	header("Location:AfterLogin/LoginContent.php");
+    if($type=="USER")
+	   header("Location:User/LoginContent.php");
+    if($type=="USERPLUS")
+       header("Location:Userplus/LoginContent.php");
+    if($type=="ADMIN")
+       header("Location:Admin/LoginContent.php");
+    if($type=="ADMINPLUS")
+       header("Location:Adminplus/LoginContent.php");
 }
 exit();
 ?>
