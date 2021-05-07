@@ -3,7 +3,7 @@
   <div style="background-color: white;" class="row p-2">
     <div class="col-sm-12">&nbsp;</div>
     <div class="col-sm-12 p-2" align="right"><a href="Add permittee.php"><button><i class="fa fa-plus"></i></button></a></div>
-    <table class="col-sm-12 table table-responsive-sm ">
+    <table class="col-sm-12 table table-responsive-sm">
       <thead class="thead-dark">
         <tr>
           <th>Sno</th>

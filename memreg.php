@@ -22,7 +22,7 @@ if($pwd!=$cpwd)
     </script>;';
 }
 $pwd=password_hash($pwd, PASSWORD_DEFAULT);
-$sql="INSERT INTO `users`(`icno`, `pwd`, `respwd`, `dname`, `ustatus`, `memclass`, `memfrom`, `resreqdate`, `resappdate`, `resappby`, `appdate`, `apptime`, `appby`, `resetph`, `pcip`, `dob`) VALUES (".$eid.",'".$pwd."','NO','".$name."','inactive','USER','".date("Y-m-d")." ".date("H:i:s")."','".date("Y-m-d")." ".date("H:i:s")."','','','','','','all is well','','".$dob."')";
+$sql="INSERT INTO `users`(`icno`, `pwd`, `respwd`, `dname`, `ustatus`, `memclass`, `memfrom`, `resreqdate`, `resappdate`, `resappby`, `appdate`, `apptime`, `appby`, `resetph`, `pcip`, `dob`) VALUES (".$eid.",'".$pwd."','NO','".$name."','TO BE APPROVED','USER','".date("Y-m-d")." ".date("H:i:s")."','".date("Y-m-d")." ".date("H:i:s")."','','','','','','all is well','','".$dob."')";
 $query=mysqli_query($con,$sql);
 if($query)
     echo '<script type="text/javascript"> 

@@ -2,6 +2,15 @@
 <?php
 if(isset($_POST["Agency"]) && isset($_POST["name"]))
 {
+  $sql="SELECT * FROM `permittee` WHERE `name`='".$_POST["name"]."'";
+  $query=mysqli_num_rows(mysqli_query($con,$sql));
+  if($query)
+  {
+    echo '<script type="text/javascript"> 
+    alert("Permittee already exists"); 
+    window.location.href = "Manage permittee.php";
+    </script>;';
+  }
   $sql="INSERT INTO `permittee`(`name`, `agency`, `pfrom`, `addedby`, `delby`, `status`) VALUES ('".$_POST["name"]."','".$_POST["Agency"]."','".date("Y-m-d")." ".date("H:i:s")."','".$_SESSION["name"]."','','active')";
   $query=mysqli_query($con,$sql);
   if($query)

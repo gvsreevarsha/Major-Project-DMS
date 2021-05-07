@@ -44,4 +44,23 @@
             </div>
         </div>        
     </div>
+    <div class="card">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="card-header panel-title" style="background-color: #FF4500; font-weight: 700;">
+                        <a data-toggle="collapse" href="#collapse3" style="text-decoration: none; color: white;">
+                        ADMINISTRATION<i class="fa fa-sort-down float-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item menu"><a href="Approve member.php" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Approve Member</a></li>
+                        <li class="list-group-item menu"><a href="userprivileges.php" style="color:white; text-decoration: none;"><i class="fa fa-paperclip"></i>&emsp;User Privileges</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>
 </div>
