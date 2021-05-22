@@ -27,7 +27,6 @@ require '../connect.php';
             font-size: 20px; 
             border-radius: 0 5px 5px 0; 
         }
-
         #mySidenav:hover {
             left: 0;
             z-index: 100;
@@ -40,6 +39,13 @@ require '../connect.php';
         }
         .menu{
             background-color: #FF8C00;
+        }
+        .menudis{
+            background-color: #FF8C00;
+            opacity: 0.9;
+        }
+        .menudis a{
+            color:#F0E68C;
         }
         .search{
             background-color: #FF4500;

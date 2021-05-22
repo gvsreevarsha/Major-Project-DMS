@@ -57,7 +57,7 @@
                 <div id="collapse3" class="panel-collapse collapse">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item menu"><a href="Approve member.php" style="color:white; text-decoration: none;"><i class="fa fa-users"></i>&emsp;Approve Member</a></li>
-                        <li class="list-group-item menu"><a href="userprivileges.php" style="color:white; text-decoration: none;"><i class="fa fa-paperclip"></i>&emsp;User Privileges</a></li>
+                        <li class="list-group-item menudis"><a style="text-decoration: none; pointer-events:none;"><i class="fa fa-paperclip"></i>&emsp;User Privileges</a></li>
                     </ul>
                 </div>
             </div>
